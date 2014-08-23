@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+  <class name="com.zimek.tdd.main.MyBankAccount">
+
+    <id name="accountId"
+        type="long"
+        column="ID" />
+
+    <property name="balance"
+              type="java.math.BigDecimal"
+              column="BALANCE_VALUE"
+              not-null="false" />
+
+  </class>
+</hibernate-mapping>
